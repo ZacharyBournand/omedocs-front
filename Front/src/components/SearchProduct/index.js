@@ -16,12 +16,8 @@ import CheckIcon from '@material-ui/icons/Check';
 import FormControl from '@material-ui/core/FormControl';
 import Table from './Table';
 
-const SearchProduct = ({ handleChange, handleChangeType, searchInputValue, searchSelectValue }) => {
+const SearchProduct = ({ handleChange, searchInputValue, searchSelectValue }) => {
   const age = 10;
-
-  const handleChangeTypeInput = (event) => {
-    handleChangeType(event.target.value, event.target.name);
-  };
 
   const handleChangeSearchInput = (event) => {
     handleChange(event.target.value, event.target.name);
@@ -45,8 +41,8 @@ const SearchProduct = ({ handleChange, handleChangeType, searchInputValue, searc
             <Box
               display="flex"
               justifyContent="center"
-              p={2}
-              mb={8}
+              p={3}
+              mb={4}
               bgcolor="white"
               width="400px"
               borderRadius="10px"
@@ -54,9 +50,11 @@ const SearchProduct = ({ handleChange, handleChangeType, searchInputValue, searc
             >
               <form>
                 <div>
-                  <InputLabel htmlFor="input-with-icon-adornment">Votre recherche ici</InputLabel>
+                  <InputLabel htmlFor="search-product-input" focused={true}>
+                    Votre recherche ici
+                  </InputLabel>
                   <Input
-                    id="input-with-icon-adornment"
+                    id="search-product-input"
                     onChange={handleChangeSearchInput}
                     value={searchInputValue}
                     name="searchProductInputValue"
@@ -67,14 +65,14 @@ const SearchProduct = ({ handleChange, handleChangeType, searchInputValue, searc
                     }
                   />
                 </div>
-                <FormControl size="medium" style={{ width: '100px' }}>
+                <FormControl size="medium" style={{ width: '200px' }}>
                   <InputLabel id="typeSelect">Type</InputLabel>
                   <Select
                     labelId="typeSelect"
                     id="typeSelectBtn"
                     value={searchSelectValue}
                     name="searchProductSelectValue"
-                    onChange={handleChangeTypeInput}
+                    onChange={handleChangeSearchInput}
                   >
                     <MenuItem value="name">Nom</MenuItem>
                     <MenuItem value="cis">CIS</MenuItem>
@@ -97,7 +95,6 @@ const SearchProduct = ({ handleChange, handleChangeType, searchInputValue, searc
 
 SearchProduct.propTypes = {
   handleChange: PropTypes.func.isRequired,
-  handleChangeType: PropTypes.func.isRequired,
   searchInputValue: PropTypes.string.isRequired,
   searchSelectValue: PropTypes.string.isRequired,
 };

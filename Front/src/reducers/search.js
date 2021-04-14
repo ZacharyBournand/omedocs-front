@@ -1,10 +1,10 @@
-import { CHANGE_INPUT_VALUE, CHANGE_SELECT_INPUT_VALUE } from '../actions/search';
+import { CHANGE_INPUT_VALUE, CHANGE_SELECT_INPUT_VALUE } from 'src/actions/search';
 
 export const initialState = {
   searchProductInputValue: '',
-  searchProductSelectValue: 'Nom',
+  searchProductSelectValue: 'name',
   searchPharmacyInputValue: '',
-  searchPharmacySelectValue: '',
+  searchPharmacySelectValue: 'auvergne rhone alpes',
 };
 
 const reducer = (state = initialState, action = {}) => {
