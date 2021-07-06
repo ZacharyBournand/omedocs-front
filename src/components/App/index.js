@@ -2,6 +2,7 @@
 import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
 import store from 'src/store';
+// J'importe la fonction permetant de sauvegarder dans le localStorage
 import { saveState } from 'src/locaStorage';
 // Import react-router-dom
 import { Switch, Route, Redirect } from 'react-router-dom';

@@ -84,7 +84,8 @@ const ProfilPage = ({
     handleSave();
   };
 
-  const handleValidation = (event) => {
+
+  const handleValidation = () => {
     if (targetField === 'editmail') {
       emailValidationForm(targetField, newEmail);
       setEditMailInputIsOpen(false);

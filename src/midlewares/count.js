@@ -1,4 +1,7 @@
+// On importe l'api AXIOS
 import api from 'src/api/api';
+
+// On importe l'action
 import { FETCH_COUNT, saveCount } from 'src/actions/utils';
 
 export default (store) => (next) => (action) => {

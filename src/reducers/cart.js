@@ -8,10 +8,13 @@ import {
   CLEAR_CART,
 } from 'src/actions/cart';
 
+// J'importe la fonction permettant de charger le localStrage
 import { loadState } from 'src/locaStorage';
 
+// J'enregistre le localStrage dans une constate
 const persistedState = loadState();
 
+// Mise en place de l'initialState de l'application
 export const initialState = {
   cart: persistedState ? persistedState.cart : [],
   pharmacyToOrder: persistedState ? persistedState.pharmacyToOrder : null,

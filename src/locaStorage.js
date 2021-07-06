@@ -1,3 +1,4 @@
+// J'export la fonction qui va charger le localStorage
 export const loadState = () => {
   try {
     const serialState = localStorage.getItem('appState');
@@ -10,6 +11,7 @@ export const loadState = () => {
   }
 };
 
+// J'export le fonction qui va sauvgarder le state de l'application dans le localStorage
 export const saveState = (state) => {
   try {
     const serialState = JSON.stringify(state);
@@ -18,3 +20,4 @@ export const saveState = (state) => {
     console.log(err);
   }
 };
+

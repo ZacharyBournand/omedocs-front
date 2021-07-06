@@ -38,12 +38,14 @@ export default (store) => (next) => (action) => {
           });
       }
       return next(action);
+      // supprimer un médicament de l'inventaire
     case DELETE_ROW_FROM_INVENTORY: {
       api
         .delete(`/deleteProduct/${action.rowId}`)
         .then((result) => {
           store.dispatch(deleteRowFromState(result.data.product.id));
         })
+        // en cas d'erreur
         .catch((error) => {
           console.log(error);
         });
