@@ -11,7 +11,6 @@ export default (store) => (next) => (action) => {
         .get('/count')
         .then((result) => result.data)
         .then((count) => {
-          console.log(count);
           store.dispatch(saveCount(count));
         });
 

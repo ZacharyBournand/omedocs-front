@@ -29,11 +29,11 @@ const mapDispatchToProps = (dispatch) => ({
     dispatch(openValidationChangeModal());
   },
 
-  emailValidationForm: (querry, fieldValue) => {
-    dispatch(changeUserMail(querry, fieldValue));
+  emailValidationForm: (fieldValue) => {
+    dispatch(changeUserMail(fieldValue));
   },
-  phoneValidationForm: (querry, fieldValue) => {
-    dispatch(changeUserPhone(querry, fieldValue));
+  phoneValidationForm: (fieldValue) => {
+    dispatch(changeUserPhone(fieldValue));
   },
 });
 

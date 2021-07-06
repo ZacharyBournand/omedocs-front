@@ -68,7 +68,8 @@ export default (store) => (next) => (action) => {
       return next(action);
     case CHANGE_USER_MAIL:
       {
-        const { user_id, newEmail } = store.getState().user;
+        const { user_id } = store.getState().user;
+        const newEmail = action.value
         api
           .patch(`/editmail/${user_id}`, { newEmail })
           .then((response) => store.dispatch(saveNewMail(response.data.profile.email)))

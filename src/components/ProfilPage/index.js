@@ -87,10 +87,10 @@ const ProfilPage = ({
 
   const handleValidation = () => {
     if (targetField === 'editmail') {
-      emailValidationForm(targetField, newEmail);
+      emailValidationForm(newEmail);
       setEditMailInputIsOpen(false);
     } else if (targetField === 'editphone') {
-      phoneValidationForm(targetField, newPhoneNumber);
+      phoneValidationForm(newPhoneNumber);
       setEditPhoneInputIsOpen(false);
     }
   };

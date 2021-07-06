@@ -51,15 +51,13 @@ export const saveNewPhone = (phone) => ({
   phone,
 });
 
-export const changeUserMail = (querry, value) => ({
+export const changeUserMail = (value) => ({
   type: CHANGE_USER_MAIL,
-  querry,
   value,
 });
 
-export const changeUserPhone = (querry, value) => ({
+export const changeUserPhone = (value) => ({
   type: CHANGE_USER_PHONE,
-  querry,
   value,
 });
 

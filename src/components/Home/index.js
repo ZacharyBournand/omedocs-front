@@ -8,7 +8,6 @@ import Box from '@material-ui/core/Box';
 import './styles.scss';
 
 const Home = ({ productsCount, establishmentsCount, fetchCount }) => {
-  console.log(productsCount, establishmentsCount);
   // Je récupère le count des pharmacy
 
   let countPharmacy = null;

@@ -72,6 +72,7 @@ export default (store) => (next) => (action) => {
           localStorage.setItem('zipCode', user.zip_code);
           localStorage.setItem('userType', user.user_type);
           // Dispatch LOGIN
+          console.log(user)
           store.dispatch(login(user, accessToken));
           // Success Message
           store.dispatch(openSnackBar('Connexion réussi', 'success'));

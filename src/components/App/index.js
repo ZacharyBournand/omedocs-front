@@ -30,6 +30,7 @@ import SalesHistory from 'src/components/SalesPage/index';
 import './styles.scss';
 import { DonutLargeSharp } from '@material-ui/icons';
 
+// Réhydratation du state au recharchement
 const App = ({ logged, rehydrate }) => {
   useEffect(() => {
     rehydrate();
