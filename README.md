@@ -12,8 +12,14 @@
 
 ### ✨ [Demo](https://omedocs-web-2d9b5.web.app/)
 
-To log in use 
-* **id**: test@test.com
+ To log in as a pharmacist : 
+
+* **id**: pharma@test.com
+* **password**: notsecure </br>
+
+To log in as a hospital :
+
+* **id**: pharma@test.com
 * **password**: notsecure </br>
 
 **Or** you can create an account via the form
