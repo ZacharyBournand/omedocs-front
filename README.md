@@ -13,7 +13,7 @@
 ### ✨ [Demo](https://omedocs-web-2d9b5.web.app/)
 
 To log in use 
-* **id**: test 
+* **id**: test@test.com
 * **password**: notsecure </br>
 
 **Or** you can create an account via the form
