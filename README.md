@@ -28,7 +28,7 @@ Hospital
 - Look up your order history
 
 ## Contributors
-- [ZacharyBournand] (https://github.com/ZacharyBournand)
+- [ZacharyBournand](https://github.com/ZacharyBournand)
 - [Geoffrey-Maillot](https://github.com/Geoffrey-Maillot)
 - [LambertGuastavino](https://github.com/LambertGuastavino)
 - [fmarc39](https://github.com/fmarc39)
