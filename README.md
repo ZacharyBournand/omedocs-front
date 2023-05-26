@@ -2,8 +2,8 @@
 O'Médocs
 
 # Project description
-**Frontend code:**
-https://github.com/ZacharyBournand/omedocs-front
+**Back-end code:**
+https://github.com/ZacharyBournand/omedocs-back
 
 
 Our e-commerce web application seeks to connect health professionals to reduce the $1.1 billion annual waste of medical products in France and help hospital cure more patients by enabling them to purchase and sell medicine that expires in a few months, which is otherwise thrown away because they cannot be sold to individuals. 
