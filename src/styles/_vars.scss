@@ -1,0 +1,30 @@
+@use 'sass:color';
+/*
+ * Fond = `#2e5849`
+ * Fond Input = `#1c382f`
+ * Bordure Input = `#183129`
+ * Ombre interne Input = `25px` `rgba(0,0,0,.1)`
+ * Ombre interne Input Focus = `25px` `rgba(0,0,0,.5)`
+ * Texte Input = `#fff`
+ * Placeholder Input = `rgba(255, 255, 255, .5)`
+ * Fond Tâche = `#eee`
+ * Bordure tâche = `#ccc`
+ */
+
+$color-base: #2e5849;
+$color-input: color.scale($color-base, $lightness: -40%);
+$color-border: color.scale($color-base, $lightness: -50%);
+
+$color-light: white;
+$color-task: #eee;
+$color-task-border: #ccc;
+$color-shadow: inset 0 0 25px rgba(0, 0, 0, .1);
+$color-shadow-focus: inset 0 0 25px rgba(0, 0, 0, .5);
+
+$transition-fast: all 0.2s ease-in-out;
+$gutter: 1rem;
+
+$main-color: #CDD0D4;
+$second-color: #bfcee2;
+$third-color: #a2caff;
+$theme-color: #0368A3;

@@ -1,0 +1,28 @@
+.left-menu {
+  transition: all 0.5s;
+  &__avatar {
+    margin: 1.5rem 0 1rem 0;
+    box-shadow: 0 0 4px rgb(126, 126, 126);
+    width: 60px !important;
+    height: 60px !important;
+  }
+}
+
+.btn-box {
+  &__btn:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+
+  &__btn:first-child {
+    margin-top: 1.5rem;
+  }
+}
+
+.active * {
+  font-weight: bold;
+  
+}
+
+.left-menu__welcome-message {
+  color: #0368A2
+}
