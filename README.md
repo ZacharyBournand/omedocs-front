@@ -1,46 +1,43 @@
-<h1 align="center">Welcome to O'médocs 👋</h1>
-<p>
-  <img alt="Version" src="https://img.shields.io/badge/version-v1.0-blue.svg?cacheSeconds=2592000" />
-</p>
+# Project name
+O'Médocs
 
-## Our goal
-
-> Connecting health professionals to fight against the waste of medicines.
+# Project description
+**Frontend code:**
+https://github.com/ZacharyBournand/omedocs-front
 
 
-## LOGIN
+Our e-commerce web application seeks to connect health professionals to reduce the $1.1 billion annual waste of medical products in France and help hospital cure more patients by enabling them to purchase and sell medicine that expires in a few months, which is otherwise thrown away because they cannot be sold to individuals. 
 
-### ✨ [Demo](https://omedocs-web-2d9b5.web.app/)
+Our application enables two types of users to sign up: pharmacies to sell medical products and hospitals to buy the medicine.
 
- <ins>To log in as a pharmacist :</ins>
+## Main Takeaways:
+Pharmacy
+- Edit profile
+- Search for a pharmacy and/or hospital
+- See a pharmacy/hospital's location on Google Maps within the web app
+- Add an item to your inventory & edit your inventory
+- Look up your sales history
 
-* **id**: pharma@test.com
-* **password**: notsecure </br>
+Hospital
+- Edit profile
+- Search for a pharmacy and/or hospital
+- See a pharmacy/hospital's location on Google Maps within the web app
+- Search for a medical product on sale & add it to your cart
+- Look up products in your cart
+- Purchase medical products
+- Look up your order history
 
-<ins>To log in as a hospital :</ins>
+## Contributors
+- [ZacharyBournand] (https://github.com/ZacharyBournand)
+- [Geoffrey-Maillot](https://github.com/Geoffrey-Maillot)
+- [LambertGuastavino](https://github.com/LambertGuastavino)
+- [fmarc39](https://github.com/fmarc39)
 
-* **id**: hospital@test.com
-* **password**: notsecure </br>
-
-**Or** you can create an account via the form
-
-
-## Install
-
-```sh
-npm install
-npm start
-```
-
-## Author
-
-👤 **F.marc**
-
-* Github: [@frmarc39](https://github.com/frmarc39)
-* LinkedIn: [@François Marc](https://www.linkedin.com/in/fran%C3%A7ois-marc-1a241661/)
-
-## Show your support
-
-Give a ⭐️ if this project helped you!
-
-
+## Test O'Médocs
+View our project on http://o-medocs.surge.sh/
+- Log in as pharmacists : 
+  - e-mail: pharmacieetoile@gmail.com
+  - password: Racekok974
+- Log in as a hospital 
+  - e-mail: clinique.aguilera@gmail.com
+  - password: Racekok974
