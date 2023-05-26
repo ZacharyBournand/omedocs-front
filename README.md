@@ -35,7 +35,7 @@ Hospital
 
 ## Test O'Médocs
 View our project on http://o-medocs.surge.sh/
-- Log in as pharmacist:
+- Log in as a pharmacist:
   - email: pharmacieetoile@gmail.com
   - password: Racekok974
 - Log in as a hospital:
