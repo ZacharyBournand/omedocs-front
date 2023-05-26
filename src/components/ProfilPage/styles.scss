@@ -1,0 +1,60 @@
+
+.profil-box {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    
+
+
+    &__main-title {
+        height: 100px;
+        margin-bottom: 2rem;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        min-width: 400px;
+    }
+    
+    &__content-elt {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 1.5rem;
+    }
+
+    &__content-elt:not(:last-child) {
+        margin-bottom: 0.5rem;
+    }
+
+    &__content-elt__infos {
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-right: 1.5rem;
+    }
+
+    &__content-elt__content {
+        text-align: right;
+    }
+
+    &__content-elt__change-phone-number {
+        width: 200px;
+        background: #f3f3f3;;
+    }
+
+    &__content-elt__change-email {
+        width: 200px;
+        background: #f3f3f3;
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+#question-mark-icon {
+    height: 5rem;
+    margin: 1rem 0;
+}

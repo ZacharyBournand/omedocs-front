@@ -1,0 +1,20 @@
+.header-top {
+  width: 100%;
+  background: #bfcee2;
+  .center-logo {
+    width: 100px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    transform: translatex(-50px);
+    &__img {
+      width: 100px;
+    }
+    &__name {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: black;
+    }
+  }
+}

@@ -1,0 +1,32 @@
+[
+    {
+        "firstName": "Lambert",
+        "img": "src/assets/img/team-id/lambert.jpg",
+        "role": "Product Owner",
+        "gitHub": "https://github.com/LambertGuastavino",
+        "linkDin": "https://www.linkedin.com/in/lambert-guastavino-b8a811192/"
+    },
+    {
+        "firstName": "François",
+        "img": "src/assets/img/team-id/francois.jpg",
+        "role": "Lead dev front",
+        "gitHub": "https://github.com/fmarc39",
+        "linkDin": "https://www.linkedin.com/in/françois-marc-1a241661"
+
+    },
+    {
+        "firstName": "Geoffrey",
+        "img": "src/assets/img/team-id/goeffrey.jpg",
+        "role": "Git Master",
+        "gitHub": "https://github.com/Geoffrey-Maillot",
+        "linkDin": "https://www.linkedin.com/in/geoffrey-maillot-06a1411bb/"
+    },
+    {
+        "firstName": "Zachary",
+        "img": "src/assets/img/team-id/zachary.png",
+        "role": "Lead dev Back",
+        "gitHub": "https://github.com/ZacharyBournand",
+        "linkDin": "https://www.linkedin.com/in/zachary-bournand-6908a5168/"
+    }
+
+]

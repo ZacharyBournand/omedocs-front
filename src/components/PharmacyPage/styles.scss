@@ -1,0 +1,44 @@
+.contact p {
+  margin-bottom: 1rem;
+}
+
+#phoneBtn {
+  margin-bottom: 1rem;
+}
+
+.message {
+  position: relative;
+
+  &__text {
+    width: 345px;
+    position: absolute;
+    top: -64px;
+    left: 185px;
+    text-align: center;
+    border-radius: 15px;
+    padding: 17px;
+    background-color: #fff;
+  }
+
+  &__text::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 25px 0 0 25px;
+    border-color: transparent transparent transparent #ffffff;
+  }
+
+  &__img {
+    width: 290px;
+    margin-top: 100px;
+  }
+  margin-bottom: 1rem;
+}
+
+.bg {
+  color: rgba(255, 255, 255, 0.252);
+}
