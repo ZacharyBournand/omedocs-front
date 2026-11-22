@@ -1,7 +1,7 @@
 /* eslint-disable no-console */
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import axios from 'axios';
+import api from 'src/api/api';
 import TextField from '@material-ui/core/TextField';
 
 import {
@@ -44,7 +44,7 @@ export default class ResetPassword extends Component {
       },
     } = this.props;
     try {
-      const response = await axios.get('http://localhost:3003/reset', {
+      const response = await api.get('/reset', {
         params: {
           resetPasswordToken: token,
         },
@@ -84,8 +84,8 @@ export default class ResetPassword extends Component {
       },
     } = this.props;
     try {
-      const response = await axios.put(
-        'http://localhost:3020/updatePasswordViaEmail',
+      const response = await api.put(
+        '/updatePasswordViaEmail',
         {
           username,
           password,

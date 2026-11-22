@@ -7,7 +7,7 @@ import PropTypes from 'prop-types';
 import Footer from 'src/components/Footer';
 import Box from '@material-ui/core/Box';
 import LeftMenu from 'src/containers/LeftMenu';
-import axios from 'axios';
+import api from 'src/api/api';
 import Slide from '@material-ui/core/Slide';
 
 // Import react-router-dom pour ajouter des links aux boutons
@@ -295,7 +295,7 @@ const CartPage = ({
     // Et j'envoie le mail
     sendMailCheckout(emailBuyer, name, completeAddress);
 
-    const response = await axios.post('http://omedocs.herokuapp.com/checkout', {
+    const response = await api.post('/checkout', {
       token,
       product,
       addresses,

@@ -1,7 +1,7 @@
 /* eslint-disable no-console */
 import React, { Component } from 'react';
 import TextField from '@material-ui/core/TextField';
-import axios from 'axios';
+import api from 'src/api/api';
 import {
   LinkButtons,
   SubmitButtons,
@@ -46,8 +46,8 @@ class ForgotPassword extends Component {
     }
     else {
       try {
-        const response = await axios.post(
-          'http://omedocs.herokuapp.com/forgotpassword',
+        const response = await api.post(
+          '/forgotpassword',
           {
             email,
           },
