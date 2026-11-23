@@ -5,8 +5,16 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const  webpack  = require('webpack');
 
 const dotenv = require('dotenv-flow').config({
-    path: paths.root
-})
+  path: paths.root,
+});
+
+const envKeys = ['BASE_URL_RENDER', 'BASE_URL_LOCAL', 'APIKEY_GOOGLE', 'SECRET_KEY'];
+const clientEnv = { ...(dotenv.parsed || {}) };
+envKeys.forEach((key) => {
+  if (process.env[key] !== undefined) {
+    clientEnv[key] = process.env[key];
+  }
+});
 
 module.exports = {
   entry: [
@@ -19,6 +27,7 @@ module.exports = {
     path: paths.build,
     publicPath: '/',
     filename: 'js/[name].[contenthash].js',
+    hashFunction: 'sha256',
   },
   resolve: {
     alias: {
@@ -37,8 +46,8 @@ module.exports = {
       ],
     }),
 
-      new webpack.DefinePlugin({
-      "process.env": JSON.stringify(dotenv.parsed)
+    new webpack.DefinePlugin({
+      'process.env': JSON.stringify(clientEnv),
     }),
 
     new HtmlWebpackPlugin({
