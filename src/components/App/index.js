@@ -16,6 +16,7 @@ import PharmacyPage from 'src/containers/PharmacyPage';
 import LoginForm from 'src/containers/LoginForm';
 // import ResetPassword from 'src/containers/ForgotPassword/';
 import TeamPage from 'src/containers/TeamPage';
+import LegalMentions from 'src/components/LegalMentions';
 import Cart from 'src/containers/CartPage/';
 import Page404 from 'src/components/404';
 import SnackBar from 'src/containers/SnackBar';
@@ -79,6 +80,9 @@ const App = ({ logged, rehydrate }) => {
         </Route>
         <Route path="/teampage">
           <TeamPage />
+        </Route>
+        <Route exact path="/mentions-legales">
+          <LegalMentions />
         </Route>
 
         <Route path="*">
